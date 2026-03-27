@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -17,6 +19,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-size: 0.938rem;
 	font-family: 'Poppins', sans-serif;
+	background: $color-white;
 }
 
 a {

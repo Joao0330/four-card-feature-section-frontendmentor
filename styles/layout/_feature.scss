@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+.feature {
+	display: flex;
+	flex-direction: column;
+	gap: 3.75rem;
+
+	@include breakpointMobile(768px) {
+		gap: 4.625rem;
+	}
+
+	&__intro {
+		text-align: center;
+		line-height: 1.4;
+		color: $color-grey-500;
+
+		h1 {
+			font-size: 1.5rem;
+			font-weight: 200;
+			letter-spacing: 0.016rem;
+			margin-bottom: 1rem;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		p {
+			letter-spacing: 0.006rem;
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1;
+		grid-template-rows: auto;
+		gap: 2rem;
+	}
+}
