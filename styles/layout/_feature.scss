@@ -5,7 +5,8 @@
 	flex-direction: column;
 	gap: 3.75rem;
 
-	@include breakpointMobile(768px) {
+	@include breakpointMobile(48rem) {
+		align-items: center;
 		gap: 4.625rem;
 	}
 
@@ -14,14 +15,26 @@
 		line-height: 1.4;
 		color: $color-grey-500;
 
+		@include breakpointMobile(48rem) {
+			max-width: 33.75rem;
+		}
+
 		h1 {
 			font-size: 1.5rem;
 			font-weight: 200;
 			letter-spacing: 0.016rem;
 			margin-bottom: 1rem;
 
+			@include breakpointMobile(48rem) {
+				font-size: 2.25rem;
+			}
+
 			span {
 				font-weight: 600;
+
+				@include breakpointMobile(48rem) {
+					display: block;
+				}
 			}
 		}
 
@@ -32,8 +45,18 @@
 
 	&__content {
 		display: grid;
-		grid-template-columns: 1;
+		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 		gap: 2rem;
+
+		@include breakpointMobile(48rem) {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+		}
+
+		@include breakpointMobile(80rem) {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+		}
 	}
 }
