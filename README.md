@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/four-card-feature-section-using-sass-css-aCYRKQzKU0)
 - Live Site URL: [Live site URL here](https://joao0330.github.io/four-card-feature-section-frontendmentor/)
 
 ## My process

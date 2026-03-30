@@ -11,44 +11,44 @@
 	box-shadow: 0 0.938rem 1.875rem -0.688rem rgba(131, 167, 210, 0.5);
 
 	@include breakpointMobile(48rem) {
-		&:nth-child(1) {
+		&--cyan {
 			grid-column: 1 / 3;
 			grid-row: 2 / 3;
 		}
 
-		&:nth-child(2) {
+		&--red {
 			grid-column: 2 / 4;
 			grid-row: 1 / 2;
 		}
 
-		&:nth-child(3) {
+		&--orange {
 			grid-column: 3 / 5;
 			grid-row: 2 / 3;
 		}
 
-		&:nth-child(4) {
+		&--blue {
 			grid-column: 2 / 4;
 			grid-row: 3 / 4;
 		}
 	}
 
 	@include breakpointMobile(80rem) {
-		&:nth-child(1) {
+		&--cyan {
 			grid-column: 1 / 2;
 			grid-row: 2 / 4;
 		}
 
-		&:nth-child(2) {
+		&--red {
 			grid-column: 2 / 3;
 			grid-row: 1 / 3;
 		}
 
-		&:nth-child(3) {
+		&--orange {
 			grid-column: 2 / 3;
 			grid-row: 3 / 5;
 		}
 
-		&:nth-child(4) {
+		&--blue {
 			grid-column: 3 / 4;
 			grid-row: 2 / 4;
 		}
@@ -85,7 +85,7 @@
 			font-weight: 600;
 			line-height: 1.35;
 			color: $color-grey-500;
-			margin-bottom: 0.375rem;
+			margin-block-end: 0.375rem;
 		}
 
 		p {
